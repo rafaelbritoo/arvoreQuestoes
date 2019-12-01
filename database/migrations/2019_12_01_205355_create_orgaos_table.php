@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateQuestaosTable extends Migration
+class CreateOrgaosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,12 @@ class CreateQuestaosTable extends Migration
      */
     public function up()
     {
-        Schema::create('questaos', function (Blueprint $table) {
+        Schema::create('orgaos', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
+            $table->string('sigla');
+            $table->string('nome');
+            $table->softDeletes();
         });
     }
 
@@ -26,6 +29,6 @@ class CreateQuestaosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('questaos');
+        Schema::dropIfExists('orgaos');
     }
 }

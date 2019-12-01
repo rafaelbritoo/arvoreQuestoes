@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Ordem extends Model
+class Orgao extends Model
 {
     //
 }

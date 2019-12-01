@@ -16,6 +16,11 @@ class CreateAssuntosTable extends Migration
         Schema::create('assuntos', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
+            $table->unsignedBigInteger('id_assunto_pai')->nullable();
+            $table->string('nome');
+            $table->string('ordem');
+            $table->softDeletes();
+            $table->foreign('id_assunto_pai')->references('id')->on('assuntos');
         });
     }
 
