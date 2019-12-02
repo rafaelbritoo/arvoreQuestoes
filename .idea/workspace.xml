@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30e4dc66-6089-4877-af0b-4f4cfaf39c57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ArvoreAssuntoController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/BancaController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/OrgaoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7ead2ab4-0944-41e4-9c74-a7fe4481ebef.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7ead2ab4-0944-41e4-9c74-a7fe4481ebef.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Assunto.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Assunto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Banca.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Banca.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_01_202154_create_bancas_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_01_202154_create_bancas_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/api/ArvoreAssuntoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ArvoreAssuntoController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +198,7 @@
       <option name="presentableId" value="Default" />
       <updated>1575223724931</updated>
       <workItem from="1575223730189" duration="2704000" />
-      <workItem from="1575227353249" duration="23920000" />
+      <workItem from="1575227353249" duration="24598000" />
     </task>
     <task id="LOCAL-00001" summary="Inicio do projeto">
       <created>1575232108574</created>
@@ -237,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575246974211</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Construido api para alimentar dados do sistema">
+      <created>1575254442044</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1575254442044</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,7 +246,8 @@
     <MESSAGE value="Adicionando projeto no git" />
     <MESSAGE value="Adicionando adicionando migrations" />
     <MESSAGE value="Adicionando adicionando seeds" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionando adicionando seeds" />
+    <MESSAGE value="Construido api para alimentar dados do sistema" />
+    <option name="LAST_COMMIT_MESSAGE" value="Construido api para alimentar dados do sistema" />
   </component>
   <component name="WindowStateProjectService">
     <state x="207" y="53" width="800" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575236112777">

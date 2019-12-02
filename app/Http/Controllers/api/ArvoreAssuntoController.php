@@ -18,7 +18,6 @@ class ArvoreAssuntoController extends Controller
         try {
             $assunto = new Assunto();
             $dados = $assunto->getArvoresByOrgaoAndBanca($orgao, $banca);
-//            var_dump($dados);
             $dados = $this->trataArvore($dados);
 
             $resposta = response()->json([
