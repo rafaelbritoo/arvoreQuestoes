@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="30e4dc66-6089-4877-af0b-4f4cfaf39c57" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/api/BancaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/api/BancaController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +191,8 @@
       <updated>1575223724931</updated>
       <workItem from="1575223730189" duration="2704000" />
       <workItem from="1575227353249" duration="25248000" />
-      <workItem from="1575318533710" duration="1025000" />
+      <workItem from="1575318533710" duration="1262000" />
+      <workItem from="1575322924661" duration="18000" />
     </task>
     <task id="LOCAL-00001" summary="Inicio do projeto">
       <created>1575232108574</created>
@@ -236,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575255088837</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Adicionando cors para api ser vista no localhost">
+      <created>1575320897913</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1575320897913</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,7 +256,8 @@
     <MESSAGE value="Adicionando adicionando seeds" />
     <MESSAGE value="Construido api para alimentar dados do sistema" />
     <MESSAGE value="retirando comentarios do codigo" />
-    <option name="LAST_COMMIT_MESSAGE" value="retirando comentarios do codigo" />
+    <MESSAGE value="Adicionando cors para api ser vista no localhost" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionando cors para api ser vista no localhost" />
   </component>
   <component name="WindowStateProjectService">
     <state x="207" y="53" width="800" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575236112777">
@@ -288,10 +296,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="187" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1575223766326" />
-    <state x="278" y="99" width="800" height="526" key="Vcs.Push.Dialog.v2" timestamp="1575246977493">
+    <state x="278" y="99" width="800" height="526" key="Vcs.Push.Dialog.v2" timestamp="1575320905362">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="278" y="99" width="800" height="526" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1575246977493" />
+    <state x="278" y="99" width="800" height="526" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1575320905362" />
     <state x="555" y="260" width="329" height="229" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1575246672017">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -304,10 +312,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="544" y="129" width="268" height="466" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1366.728@0.0.1366.728" timestamp="1575227563383" />
-    <state x="376" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1575318533604">
+    <state x="376" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1575322927715">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="376" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1575318533604" />
+    <state x="376" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1575322927715" />
     <state x="488" y="283" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575232115041">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

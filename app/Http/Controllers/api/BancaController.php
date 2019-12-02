@@ -15,6 +15,6 @@ class BancaController extends Controller
      */
     public function index()
     {
-        return Banca::all(['sigla','nome']);
+        return Banca::all(['sigla','nome','id']);
     }
 }
