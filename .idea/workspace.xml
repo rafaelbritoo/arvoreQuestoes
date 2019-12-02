@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30e4dc66-6089-4877-af0b-4f4cfaf39c57" name="Default Changelist" comment="Adicionando projeto no git">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7ead2ab4-0944-41e4-9c74-a7fe4481ebef.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7ead2ab4-0944-41e4-9c74-a7fe4481ebef.xml" afterDir="false" />
+    <list default="true" id="30e4dc66-6089-4877-af0b-4f4cfaf39c57" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/database/factories/QuestaoFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/AssuntosTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/BancasTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/OrgaosTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/QuestaosTableSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Ordem.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Orgao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_01_201835_create_assuntos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_01_201835_create_assuntos_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_01_202154_create_bancas_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_01_202154_create_bancas_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_01_202205_create_ordems_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_01_205355_create_orgaos_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_01_202212_create_questaos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_01_213812_create_questaos_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Assunto.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Assunto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Banca.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Banca.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Orgao.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Orgao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Questao.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Questao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/logs/laravel-2019-12-01.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel-2019-12-01.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
@@ -162,8 +163,13 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/factories" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/database/factories" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -204,7 +210,7 @@
       <option name="presentableId" value="Default" />
       <updated>1575223724931</updated>
       <workItem from="1575223730189" duration="2704000" />
-      <workItem from="1575227353249" duration="6660000" />
+      <workItem from="1575227353249" duration="16533000" />
     </task>
     <task id="LOCAL-00001" summary="Inicio do projeto">
       <created>1575232108574</created>
@@ -220,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575232802873</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Adicionando adicionando migrations">
+      <created>1575236797778</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1575236797778</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,33 +242,38 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Inicio do projeto" />
     <MESSAGE value="Adicionando projeto no git" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionando projeto no git" />
+    <MESSAGE value="Adicionando adicionando migrations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionando adicionando migrations" />
   </component>
   <component name="WindowStateProjectService">
     <state x="207" y="53" width="800" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575236112777">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="207" y="53" width="800" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1575236112777" />
-    <state x="294" y="0" width="768" height="726" key="CommitChangelistDialog2" timestamp="1575233668757">
+    <state x="416" y="121" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1575245108098">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="294" y="0" width="768" height="726" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1575233668757" />
-    <state width="903" height="172" key="GridCell.Tab.0.bottom" timestamp="1575235548826">
+    <state x="416" y="121" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1575245108098" />
+    <state x="294" y="0" width="768" height="726" key="CommitChangelistDialog2" timestamp="1575236797359">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="903" height="172" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1575235548826" />
-    <state width="903" height="172" key="GridCell.Tab.0.center" timestamp="1575235548824">
+    <state x="294" y="0" width="768" height="726" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1575236797359" />
+    <state width="903" height="172" key="GridCell.Tab.0.bottom" timestamp="1575238780059">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="903" height="172" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1575235548824" />
-    <state width="903" height="172" key="GridCell.Tab.0.left" timestamp="1575235548823">
+    <state width="903" height="172" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1575238780059" />
+    <state width="903" height="172" key="GridCell.Tab.0.center" timestamp="1575238780058">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="903" height="172" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1575235548823" />
-    <state width="903" height="172" key="GridCell.Tab.0.right" timestamp="1575235548825">
+    <state width="903" height="172" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1575238780058" />
+    <state width="903" height="172" key="GridCell.Tab.0.left" timestamp="1575238780058">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="903" height="172" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1575235548825" />
+    <state width="903" height="172" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1575238780058" />
+    <state width="903" height="172" key="GridCell.Tab.0.right" timestamp="1575238780059">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="903" height="172" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1575238780059" />
     <state width="220" height="477" key="HiddenNamespacesPopup" timestamp="1575225721458">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -264,10 +282,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="187" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1575223766326" />
-    <state x="555" y="260" width="329" height="229" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1575236419113">
+    <state x="278" y="99" width="800" height="526" key="Vcs.Push.Dialog.v2" timestamp="1575236803375">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="555" y="260" width="329" height="229" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.728@0.0.1366.728" timestamp="1575236419113" />
+    <state x="278" y="99" width="800" height="526" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1575236803375" />
+    <state x="555" y="260" width="329" height="229" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1575246672017">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="555" y="260" width="329" height="229" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.728@0.0.1366.728" timestamp="1575246672017" />
+    <state x="572" y="260" width="308" height="203" key="com.intellij.database.actions.ToolActions$ScriptingActionBase$1" timestamp="1575244359574">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="572" y="260" width="308" height="203" key="com.intellij.database.actions.ToolActions$ScriptingActionBase$1/0.0.1366.728@0.0.1366.728" timestamp="1575244359574" />
     <state x="544" y="129" width="268" height="466" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1575227563383">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -288,9 +314,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1575231095106" />
-    <state x="408" y="277" width="540" height="169" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1575233696165">
+    <state x="408" y="277" width="540" height="169" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1575239439706">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="408" y="277" width="540" height="169" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1366.728@0.0.1366.728" timestamp="1575233696165" />
+    <state x="408" y="277" width="540" height="169" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1366.728@0.0.1366.728" timestamp="1575239439706" />
   </component>
 </project>
