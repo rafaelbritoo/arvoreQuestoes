@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="30e4dc66-6089-4877-af0b-4f4cfaf39c57" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/api/ArvoreAssuntoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ArvoreAssuntoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,6 +139,8 @@
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
       <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-cors" />
     </include_path>
   </component>
   <component name="ProjectId" id="1UONXuytJFTfsC6wyuMyyMMnoyK" />
@@ -170,17 +173,7 @@
       <list>
         <serviceView>
           <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:ggeducacional" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:ggeducacional" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@67adc3b8" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </treeState>
         </serviceView>
@@ -198,7 +191,8 @@
       <option name="presentableId" value="Default" />
       <updated>1575223724931</updated>
       <workItem from="1575223730189" duration="2704000" />
-      <workItem from="1575227353249" duration="24598000" />
+      <workItem from="1575227353249" duration="25248000" />
+      <workItem from="1575318533710" duration="1025000" />
     </task>
     <task id="LOCAL-00001" summary="Inicio do projeto">
       <created>1575232108574</created>
@@ -235,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575254442044</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="retirando comentarios do codigo">
+      <created>1575255088837</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1575255088837</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,7 +248,8 @@
     <MESSAGE value="Adicionando adicionando migrations" />
     <MESSAGE value="Adicionando adicionando seeds" />
     <MESSAGE value="Construido api para alimentar dados do sistema" />
-    <option name="LAST_COMMIT_MESSAGE" value="Construido api para alimentar dados do sistema" />
+    <MESSAGE value="retirando comentarios do codigo" />
+    <option name="LAST_COMMIT_MESSAGE" value="retirando comentarios do codigo" />
   </component>
   <component name="WindowStateProjectService">
     <state x="207" y="53" width="800" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575236112777">
@@ -258,10 +260,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="416" y="121" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1575249562933" />
-    <state x="294" y="0" width="768" height="726" key="CommitChangelistDialog2" timestamp="1575254440555">
+    <state x="294" y="0" width="768" height="726" key="CommitChangelistDialog2" timestamp="1575320895854">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="294" y="0" width="768" height="726" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1575254440555" />
+    <state x="294" y="0" width="768" height="726" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1575320895854" />
     <state width="903" height="172" key="GridCell.Tab.0.bottom" timestamp="1575238780059">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -302,22 +304,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="544" y="129" width="268" height="466" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1366.728@0.0.1366.728" timestamp="1575227563383" />
-    <state x="376" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1575227354498">
+    <state x="376" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1575318533604">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="376" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1575227354498" />
+    <state x="376" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1575318533604" />
     <state x="488" y="283" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575232115041">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="283" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1575232115041" />
-    <state x="369" y="0" width="628" height="728" key="find.popup" timestamp="1575231086874">
+    <state x="369" y="0" width="628" height="728" key="find.popup" timestamp="1575318873873">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="369" y="0" width="628" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1575231086874" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1575231095106">
+    <state x="369" y="0" width="628" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1575318873873" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1575318879430">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1575231095106" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1575318879430" />
     <state x="408" y="277" width="540" height="169" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1575251757352">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
