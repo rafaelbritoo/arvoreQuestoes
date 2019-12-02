@@ -1,18 +1,7 @@
 <?php
 
-use Illuminate\Http\Request;
+    Route::apiResource('banca', 'api\BancaController');
+    Route::apiResource('orgao', 'api\OrgaoController');
+//    Route::apiResource('programa', 'api\ArvoreAssuntoController');
+    Route::get('arvores-assuntos/orgao/{orgao}/banca/{banca}', 'api\ArvoreAssuntoController@getArvoreByOrgaoAndBanca');
 
-/*
-|--------------------------------------------------------------------------
-| API Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register API routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| is assigned the "api" middleware group. Enjoy building your API!
-|
-*/
-
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});

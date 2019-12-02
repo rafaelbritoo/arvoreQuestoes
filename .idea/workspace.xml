@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30e4dc66-6089-4877-af0b-4f4cfaf39c57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/factories/QuestaoFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/AssuntosTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/BancasTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/OrgaosTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/QuestaosTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ArvoreAssuntoController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/BancaController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/OrgaoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7ead2ab4-0944-41e4-9c74-a7fe4481ebef.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7ead2ab4-0944-41e4-9c74-a7fe4481ebef.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Assunto.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Assunto.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Banca.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Banca.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Orgao.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Orgao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Questao.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Questao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/logs/laravel-2019-12-01.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel-2019-12-01.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_01_202154_create_bancas_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_01_202154_create_bancas_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
@@ -210,7 +207,7 @@
       <option name="presentableId" value="Default" />
       <updated>1575223724931</updated>
       <workItem from="1575223730189" duration="2704000" />
-      <workItem from="1575227353249" duration="16533000" />
+      <workItem from="1575227353249" duration="23920000" />
     </task>
     <task id="LOCAL-00001" summary="Inicio do projeto">
       <created>1575232108574</created>
@@ -233,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575236797778</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Adicionando adicionando seeds">
+      <created>1575246974211</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575246974211</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,21 +247,22 @@
     <MESSAGE value="Inicio do projeto" />
     <MESSAGE value="Adicionando projeto no git" />
     <MESSAGE value="Adicionando adicionando migrations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionando adicionando migrations" />
+    <MESSAGE value="Adicionando adicionando seeds" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionando adicionando seeds" />
   </component>
   <component name="WindowStateProjectService">
     <state x="207" y="53" width="800" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575236112777">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="207" y="53" width="800" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1575236112777" />
-    <state x="416" y="121" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1575245108098">
+    <state x="416" y="121" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1575249562933">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="416" y="121" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1575245108098" />
-    <state x="294" y="0" width="768" height="726" key="CommitChangelistDialog2" timestamp="1575236797359">
+    <state x="416" y="121" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1575249562933" />
+    <state x="294" y="0" width="768" height="726" key="CommitChangelistDialog2" timestamp="1575254440555">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="294" y="0" width="768" height="726" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1575236797359" />
+    <state x="294" y="0" width="768" height="726" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1575254440555" />
     <state width="903" height="172" key="GridCell.Tab.0.bottom" timestamp="1575238780059">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -282,10 +287,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="187" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1575223766326" />
-    <state x="278" y="99" width="800" height="526" key="Vcs.Push.Dialog.v2" timestamp="1575236803375">
+    <state x="278" y="99" width="800" height="526" key="Vcs.Push.Dialog.v2" timestamp="1575246977493">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="278" y="99" width="800" height="526" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1575236803375" />
+    <state x="278" y="99" width="800" height="526" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1575246977493" />
     <state x="555" y="260" width="329" height="229" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1575246672017">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -314,9 +319,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1575231095106" />
-    <state x="408" y="277" width="540" height="169" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1575239439706">
+    <state x="408" y="277" width="540" height="169" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1575251757352">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="408" y="277" width="540" height="169" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1366.728@0.0.1366.728" timestamp="1575239439706" />
+    <state x="408" y="277" width="540" height="169" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1366.728@0.0.1366.728" timestamp="1575251757352" />
   </component>
 </project>
